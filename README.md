@@ -6,3 +6,5 @@ Dataset description
 Tasks illustration
 
 Ablation study
+
+Generated layouts images
