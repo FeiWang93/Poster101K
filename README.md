@@ -27,7 +27,7 @@ Generated layout images
 
 
 
-# Poster Image Layout Dataset (POSTER101K)
+# POSTER101K: A Large-scale Poster Image Dataset for Graphic Layout Generation
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY--ND_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 
