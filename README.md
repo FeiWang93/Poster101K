@@ -1,9 +1,5 @@
 # POSTER101K: A Large-scale Poster Image Dataset for Graphic Layout Generation
 
-Tasks illustration
-
-...
-
 implementation details
 
 ...
@@ -24,9 +20,11 @@ Generated layout images
 
 ![Poster Examples](./Dataset_Introduction.png)  
 
-**Poster101K** is a large-scale image dataset of posters, originally created as a benchmark for graphic layout generation models. It includes 101,914 poster images covering six themes and 549,260 bounding boxes annotating nine types of design elements. It offers a significant advantage in scale and provides information on new design elements. The poster images were collected using [Eagle](https://cn.eagle.cool/) from [Pinterest](https://au.pinterest.com/), [Canvas](https://www.canva.cn/), [Fotor](https://www.fotor.com.cn/), [Freepik](https://https://wepik.com//), and [Gaoding](https://www.gaoding.com/). All poster images were manually annotated by [Label Studio](https://labelstud.io/). Only posters under permissive licenses were collected.
+**Poster101K** is a large-scale image dataset of posters, originally created as a benchmark for graphic layout generation models. It includes 101,914 poster images covering six themes and 549,260 bounding boxes annotating nine types of design elements. It offers a significant advantage in scale and provides information on new design elements. The poster images were collected using [Eagle](https://cn.eagle.cool/) from [Pinterest](https://au.pinterest.com/), [Canvas](https://www.canva.cn/), [Fotor](https://www.fotor.com.cn/), [Freepik](https://https://wepik.com//), and [Gaoding](https://www.gaoding.com/). All poster images were manually annotated by [Label Studio](https://labelstud.io/). Only posters under permissive licenses were collected. All color palettes are extracted by [Pylette](https://doi.org/10.5281/zenodo.14757253).
 
 ![Task Illustration](./Tasks_illustration_(L-R).jpg)  
+
+We tested four baseline models in six graphic layout-related generation tasks (shown in the figure above) with our dataset and three existing datasets to evaluate the value and potential of our dataset. Experimental results show the advantage of our dataset over the existing ones. Our dataset provides an important resource for model training and evaluation methods in the graphic layout field.
 
 
 ## 📥 Download
