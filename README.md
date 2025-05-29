@@ -1,5 +1,4 @@
-# Poster101K TODO
-Poster101K: A Large-scale Dataset for Poster Graphic Layout Generation
+# POSTER101K: A Large-scale Poster Image Dataset for Graphic Layout Generation
 
 Dataset description
 
@@ -25,21 +24,18 @@ Generated layout images
 
 ...
 
-# POSTER101K: A Large-scale Poster Image Dataset for Graphic Layout Generation
-
 ![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC_BY--ND_4.0-blue.svg)
 ![Python 3.6](https://img.shields.io/badge/Python-3.9-blue.svg)
 ![Format PNG](https://img.shields.io/badge/Format-PNG_JPG_WEBP-blue.svg)
 ![Images 70000](https://img.shields.io/badge/Images-100,000-blue.svg)
 
-Poster101K is a high-quality image dataset of posters, originally created as a benchmark for graphic layout generation models. 
+![Poster Examples](./Dataset Introduction.pdf)  
 
-**A large-scale dataset of 101,914 posters with layout annotations**, designed for graphic design analysis, layout generation models, and computer vision research.
-
-![Poster Examples](docs/examples.png)  
+**Poster101K** is a large-scale image dataset of posters, originally created as a benchmark for graphic layout generation models. It includes 101,914 poster images covering six themes and 549,260 bounding boxes annotating nine types of design elements.
 
 
-## 📥 下载数据集
+
+## 📥 Download
 本仓库不直接存储数据文件。请通过以下方式获取：
 
 ### 推荐下载源（Kaggle）：
