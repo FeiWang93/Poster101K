@@ -1,39 +1,84 @@
-# POSTER101K: A Large-scale Poster Image Dataset for Graphic Layout Generation
-
 ![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC_BY--ND_4.0-blue.svg)
 ![Python 3.6](https://img.shields.io/badge/Python-3.9-blue.svg)
 ![Format PNG](https://img.shields.io/badge/Format-PNG_JPG_WEBP-blue.svg)
 ![Images 70000](https://img.shields.io/badge/Images-100,000-blue.svg)
+[![Kaggle](https://img.shields.io/badge/Download_on-Kaggle-20BEFF.svg)](https://www.kaggle.com/datasets/flylyisflying93/poster101k/)
 
-![Dataset Introduction](./Dataset_Introduction.png)  
+![Poster Examples](./Dataset_Introduction.png)  
 
-**Poster101K** is a large-scale image dataset of posters, originally created as a benchmark for graphic layout generation models. It includes 101,914 poster images covering six themes and 549,260 bounding boxes annotating nine types of design elements.
+**Poster101K** is a large-scale image dataset of posters, originally created as a benchmark for graphic layout generation models. It includes 101,914 poster images covering six themes and 549,260 bounding boxes annotating nine types of design elements. It offers a significant advantage in scale and provides information on new design elements. The poster images were collected using [Eagle](https://cn.eagle.cool/) from [Pinterest](https://au.pinterest.com/), [Canvas](https://www.canva.cn/), [Fotor](https://www.fotor.com.cn/), [Freepik](https://https://wepik.com//), and [Gaoding](https://www.gaoding.com/). All poster images were manually annotated by [Label Studio](https://labelstud.io/). Only posters under permissive licenses were collected.
 
 
 
 ## 📥 Download
-本仓库不直接存储数据文件。请通过以下方式获取：
+This repository does not store data files directly. Please obtain them through the following methods:
 
-### 推荐下载源（Kaggle）：
-[![Kaggle](https://img.shields.io/badge/Download_on-Kaggle-20BEFF.svg)](https://www.kaggle.com/yourusername/mpld-100k)
+### Recommended download source（Kaggle）：
+- [Kaggle](https://www.kaggle.com/datasets/flylyisflying93/poster101k/)
 
-### 备用下载源：
-- [Google Drive 压缩包](https://drive.google.com/...)
-- [Torrent 磁力链接](magnet:?xt=urn:btih:...) *(推荐批量下载)*
+### Alternative download sources：
+- [Baidu Netdisk](https://pan.baidu.com/s/1p3bDj4suiawCB5ZA6sNGhQ?pwd=d8m3) Access Code: d8m3
 
-## 🗂️ 数据集结构
+## 🚀 Quick Start
+### Download through Kaggle API：
+```bash
+#!/bin/bash
+kaggle datasets download flylyisflying93/poster101k
+```
+
+### Data loading example（Python）：
+```python
+# Install dependencies as needed:
+# pip install kagglehub[pandas-datasets]
+import kagglehub
+from kagglehub import KaggleDatasetAdapter
+
+# Set the path to the file you'd like to load
+file_path = ""
+
+# Load the latest version
+df = kagglehub.load_dataset(
+  KaggleDatasetAdapter.PANDAS,
+  "flylyisflying93/poster101k",
+  file_path,
+  # Provide any additional arguments like 
+  # sql_query or pandas_kwargs. See the 
+  # documenation for more information:
+  # https://github.com/Kaggle/kagglehub/blob/main/README.md#kaggledatasetadapterpandas
+)
+
+print("First 5 records:", df.head())
+```
+
+## 🗂️ Dataset Structure
 ```
 Poster101K/
-├── images/               # 海报图片
-│   ├── 000001.jpg        # 格式: JPG (RGB, 平均分辨率 2000x3000)
-│   └── ...               # 总计 100,000 文件
-└── annotations/          # 标注文件
-    ├── 000001.json      # JSON格式布局信息
-    └── ...               # 与图片一一对应
+├── images/                                      # Poster Images
+│   ├──Business/                                 # Theme name
+│   │   ├── 1                                    # Subfolder for number grouping (total 1000 images per folder)
+│   │   │   ├── Business_1.png                   # Format: JPG, PNG, WEBP
+│   │   │   └── ...
+│   │   └── ...
+│   ├──Culture/
+│   ├──Fashion/
+│   ├──Festival/
+│   ├──Food/
+│   └──Life/                                     # Total 101,914 images
+└── annotations/                                 # Annotation files
+	├──Business_annotation/ 
+	│    └── xml
+	│	     ├── Business_1.xml                  # Layout data in XML format
+	│	     └── ...                             # One-to-one correspondence with poster images
+	├──Culture_annotation/ 
+	├──Fashion_annotation/ 
+	├──Festival_annotation/ 
+	├──Food_annotation/ 
+	└──Life_annotation/ 
+
 ```
 
-## 📝 标注格式说明
-每个xml文件包含：
+## 📝 Annotation Metadata
+Every XML file includes：
 ```xml
 <annotation>
   <filename>Business_1</filename>
@@ -63,43 +108,20 @@ Poster101K/
 ```
 
 
-## 🚀 快速开始
-### 通过Kaggle API下载：
-```bash
-pip install kaggle
-kaggle datasets download -d yourusername/mpld-100k
-unzip mpld-100k.zip
-```
+## 🤝 Feedback
+Suggestions and opinions on this dataset (both positive and negative) are welcomed. Please contact the author by sending an email to wangf21@m.fudan.edu.cn.
 
-### 数据加载示例（Python）：
-```python
-import json
-from PIL import Image
-
-def load_sample(sample_id):
-    img = Image.open(f"posters/{sample_id}.jpg")
-    with open(f"annotations/{sample_id}.json") as f:
-        ann = json.load(f)
-    return img, ann
-```
-
-## 🤝 参与贡献
-欢迎通过以下方式改进数据集：
-- 提交Issue报告标注错误
-- 通过Pull Request添加新标注字段
-- 分享您使用本数据集的研究成果
-
-## 📜 许可协议
-本数据集采用 [CC BY 4.0](LICENSE) 许可，使用时需注明来源：
+## 📜 License and Copyright
+This dataset is open source under [CC BY 4.0](LICENSE) license. For commercial purposes, please contact Dr. Fei Wang at wangf21@m.fudan.edu.cn or Prof. Shuigeng Zhou at sgzhou@fudan.edu.cn.
 ```bibtex
-@dataset{mpld-100k,
-  author = {Your Name},
-  year = {2023},
-  title = {Movie Poster Layout Dataset},
+@dataset{poster101k,
+  author = {Fei Wang},
+  year = {2025},
+  title = {Poster101k: A Large-scale Poster Image Dataset for Graphic Layout Generation},
   publisher = {Kaggle},
   version = {1.0},
-  url = {https://www.kaggle.com/yourusername/mpld-100k}
+  url = {https://www.kaggle.com/datasets/flylyisflying93/poster101k/}
 }
 ```
 
----
+© Shanghai Key Lab of Intelligent Information Processing, and School of Computer Science, Fudan University.
