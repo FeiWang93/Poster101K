@@ -116,6 +116,8 @@ Every XML file includes：
 </annotation>
 ```
 
+## 👍 Acknowledgements
+We thank Qiuyang Yuan and Liying Wang for in-depth discussions and helpful poster labelling. We also thank Shuigeng Zhou for careful and patient guidance.
 
 ## 🤝 Feedback
 Suggestions and opinions on this dataset (both positive and negative) are welcomed. Please contact the author by sending an email to wangf21@m.fudan.edu.cn.
