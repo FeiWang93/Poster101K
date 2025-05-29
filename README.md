@@ -30,6 +30,7 @@ Generated layout images
 ![Images 70000](https://img.shields.io/badge/Images-100,000-blue.svg)
 
 ![Poster Examples](./Dataset Introduction.pdf)  
+![Teaser image](./Datsaet Introduction.pdf)
 
 **Poster101K** is a large-scale image dataset of posters, originally created as a benchmark for graphic layout generation models. It includes 101,914 poster images covering six themes and 549,260 bounding boxes annotating nine types of design elements.
 
