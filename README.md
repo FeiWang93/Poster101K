@@ -1,3 +1,21 @@
+# POSTER101K: A Large-scale Poster Image Dataset for Graphic Layout Generation
+
+Tasks illustration
+
+...
+
+implementation details
+
+...
+
+Ablation study
+
+...
+
+Generated layout images
+
+...
+
 ![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC_BY--ND_4.0-blue.svg)
 ![Python 3.6](https://img.shields.io/badge/Python-3.9-blue.svg)
 ![Format PNG](https://img.shields.io/badge/Format-PNG_JPG_WEBP-blue.svg)
@@ -67,8 +85,8 @@ Poster101K/
 └── annotations/                                 # Annotation files
 	├──Business_annotation/ 
 	│    └── xml
-	│	     ├── Business_1.xml                  # Layout data in XML format
-	│	     └── ...                             # One-to-one correspondence with poster images
+	│	├── Business_1.xml                  # Layout data in XML format
+	│	└── ...                             # One-to-one correspondence with poster images
 	├──Culture_annotation/ 
 	├──Fashion_annotation/ 
 	├──Festival_annotation/ 
