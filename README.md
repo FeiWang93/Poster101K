@@ -1,4 +1,4 @@
-# POSTER101K: A Large-scale Poster Image Dataset for Graphic Layout Generation
+# POSTER101K: A Large-scale Poster Dataset for Graphic Layout Generation
 ![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC_BY--ND_4.0-blue.svg)
 ![Python 3.6](https://img.shields.io/badge/Python-3.9-blue.svg)
 ![Format PNG](https://img.shields.io/badge/Format-PNG_JPG_WEBP-blue.svg)
