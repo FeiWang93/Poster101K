@@ -1,13 +1,4 @@
 # POSTER101K: A Large-scale Poster Image Dataset for Graphic Layout Generation
-
-TODO:
-
-implementation details
-
-Ablation study
-
-Generated layout images
-
 ![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC_BY--ND_4.0-blue.svg)
 ![Python 3.6](https://img.shields.io/badge/Python-3.9-blue.svg)
 ![Format PNG](https://img.shields.io/badge/Format-PNG_JPG_WEBP-blue.svg)
@@ -21,6 +12,9 @@ Generated layout images
 ![Task Illustration](./Tasks_illustration_(L-R).jpg)  
 
 We tested four baseline models in six graphic layout-related generation tasks (shown in the figure above) with our dataset and three existing datasets to evaluate the value and potential of our dataset. Experimental results show the advantage of our dataset over the existing layout datasets (e.g. [Rico](http://www.interactionmining.org/rico.html), [PubLayNet](https://github.com/ibm-aur-nlp/PubLayNet), and [MagLayout](https://xtqiao.com/projects/content_aware_layout/)). Our dataset provides an important resource for model training and evaluation methods in the graphic layout field.
+
+## 📥 Supplementary materials for ACM MM 25' Dataset Track
+Supplementary materials for ACM MM 25' Dataset Track are shown in [Appendix](./Appendix_POSTER101K_ACM_MM_2025_DATASET_TRACK.pdf).
 
 
 ## 📥 Download
