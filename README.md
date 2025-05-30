@@ -70,8 +70,8 @@ Poster101K/
 └── annotations/                                 # Annotation files
     ├──Business_annotation/ 
     │    └── xml
-    │	  ├── Business_1.xml                   # Layout data in XML format
-    │	  └── ...                              # One-to-one correspondence with poster images
+    │	    ├── Business_1.xml                   # Layout data in XML format
+    │	    └── ...                              # One-to-one correspondence with poster images
     ├──Culture_annotation/ 
     ├──Fashion_annotation/ 
     ├──Festival_annotation/ 
