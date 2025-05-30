@@ -68,15 +68,15 @@ Poster101K/
 │   ├──Food/
 │   └──Life/                                     # Total 101,914 images
 └── annotations/                                 # Annotation files
-  ├──Business_annotation/ 
-  │    └── xml
-  │	├── Business_1.xml                   # Layout data in XML format
-  │	└── ...                              # One-to-one correspondence with poster images
-  ├──Culture_annotation/ 
-  ├──Fashion_annotation/ 
-  ├──Festival_annotation/ 
-  ├──Food_annotation/ 
-  └──Life_annotation/ 
+    ├──Business_annotation/ 
+    │    └── xml
+    │	├── Business_1.xml                   # Layout data in XML format
+    │	└── ...                              # One-to-one correspondence with poster images
+    ├──Culture_annotation/ 
+    ├──Fashion_annotation/ 
+    ├──Festival_annotation/ 
+    ├──Food_annotation/ 
+    └──Life_annotation/ 
 
 ```
 
