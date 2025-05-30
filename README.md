@@ -128,4 +128,4 @@ This dataset is open source under [CC BY 4.0](LICENSE) license. For commercial p
   url = {https://www.kaggle.com/datasets/flylyisflying93/poster101k/}
 }
 ```
-©2025 Shanghai Key Lab of Intelligent Information Processing, and School of Computer Science, Fudan University.
+©2025 Advanced Data and Machine Intelligence Systems, School of Computer Science, Fudan University.
