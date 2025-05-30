@@ -116,7 +116,7 @@ We thank Qiuyang Yuan and Liying Wang for in-depth discussions and helpful poste
 ## 🤝 Feedback
 Suggestions and opinions on this dataset (both positive and negative) are welcomed. Please contact the author by sending an email to wangf21@m.fudan.edu.cn.
 
-## 📜 License and Copyright
+## 📜 License
 This dataset is open source under [CC BY 4.0](LICENSE) license. For commercial purposes, please contact Dr. Fei Wang at wangf21@m.fudan.edu.cn or Prof. Shuigeng Zhou at sgzhou@fudan.edu.cn.
 ```bibtex
 @dataset{poster101k,
