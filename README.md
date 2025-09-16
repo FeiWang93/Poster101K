@@ -14,8 +14,8 @@
 
 We tested four baseline models in six graphic layout-related generation tasks (shown in the figure above) with our dataset and three existing datasets to evaluate the value and potential of our dataset. Experimental results show the advantage of our dataset over the existing layout datasets (e.g. [Rico](http://www.interactionmining.org/rico.html), [PubLayNet](https://github.com/ibm-aur-nlp/PubLayNet), and [MagLayout](https://xtqiao.com/projects/content_aware_layout/)). Our dataset provides an important resource for model training and evaluation methods in the graphic layout field.
 
-## 📎 Supplementary materials for ACM MM 25' Dataset Track
-**Supplementary materials for ACM MM 25' Dataset Track** are shown in [the Appendix file](./Appendix_POSTER101K_ACM_MM_2025_DATASET_TRACK.pdf).
+## 📎 Supplementary materials
+**Supplementary materials** are shown in [the Appendix file](./Appendix_POSTER101K.pdf).
 
 
 ## 📥 Download
